@@ -3,6 +3,10 @@ import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/header-img.svg";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import "animate.css";
+
+import navIcon1 from "../assets/img/nav-icon1.svg";
+import navIcon2 from "../assets/img/nav-icon2.svg";
+import navIcon3 from "../assets/img/nav-icon3.svg";
 import TrackVisibility from "react-on-screen";
 
 export const Banner = () => {
@@ -73,7 +77,7 @@ export const Banner = () => {
                                         Welcome to my Portfolio
                                     </span>
                                     <h1>
-                                        {`Hi! I'm Ankur Sharma`}{" "}
+                                        {`Hi! I'm Ankur Sharma`} <br />
                                         <span
                                             className="txt-rotate"
                                             dataPeriod="1000"
@@ -83,6 +87,17 @@ export const Banner = () => {
                                         </span>
                                     </h1>
                                     <p>Slide Down to know more about me...</p>
+                                    <div className="social-icon">
+                                        <a href="#">
+                                            <img src={navIcon1} alt="Icon" />
+                                        </a>
+                                        <a href="#">
+                                            <img src={navIcon2} alt="Icon" />
+                                        </a>
+                                        <a href="#">
+                                            <img src={navIcon3} alt="Icon" />
+                                        </a>
+                                    </div>
                                     <button
                                         onClick={() => console.log("connect")}
                                     >
@@ -103,7 +118,11 @@ export const Banner = () => {
                                             : ""
                                     }
                                 >
-                                    <img src={headerImg} alt="Header Img" />
+                                    <img
+                                        className="animated_img"
+                                        src={headerImg}
+                                        alt="Header Img"
+                                    />
                                 </div>
                             )}
                         </TrackVisibility>

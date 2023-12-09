@@ -3,6 +3,9 @@ import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/crimeLocator.png";
 import projImg3 from "../assets/img/quizApp.png";
+import projImg4 from "../assets/img/memories.png";
+import projImg5 from "../assets/img/blogging.png";
+import projImg6 from "../assets/img/vajra.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -12,12 +15,12 @@ export const Projects = () => {
         {
             title: "Memories Project",
             description: "Web Development",
-            imgUrl: projImg1,
+            imgUrl: projImg4,
         },
         {
             title: "Blogging Website",
             description: "Web Development",
-            imgUrl: projImg2,
+            imgUrl: projImg5,
         },
         {
             title: "Quiz App",
@@ -37,7 +40,7 @@ export const Projects = () => {
         {
             title: "Vajra",
             description: "Web Development",
-            imgUrl: projImg3,
+            imgUrl: projImg6,
         },
     ];
 
@@ -56,7 +59,7 @@ export const Projects = () => {
                                     }
                                 >
                                     <h2>Projects</h2>
-                                    <p>
+                                    <p className="project_para">
                                         Listed Below are Projects made by me.{" "}
                                         <br></br>
                                         Overview the below projects by clicking
@@ -72,17 +75,26 @@ export const Projects = () => {
                                             id="pills-tab"
                                         >
                                             <Nav.Item>
-                                                <Nav.Link eventKey="first">
+                                                <Nav.Link
+                                                    className="hoverable"
+                                                    eventKey="first"
+                                                >
                                                     Tab 1
                                                 </Nav.Link>
                                             </Nav.Item>
                                             <Nav.Item>
-                                                <Nav.Link eventKey="second">
+                                                <Nav.Link
+                                                    className="hoverable"
+                                                    eventKey="second"
+                                                >
                                                     Tab 2
                                                 </Nav.Link>
                                             </Nav.Item>
                                             <Nav.Item>
-                                                <Nav.Link eventKey="third">
+                                                <Nav.Link
+                                                    className="hoverable"
+                                                    eventKey="third"
+                                                >
                                                     Tab 3
                                                 </Nav.Link>
                                             </Nav.Item>
