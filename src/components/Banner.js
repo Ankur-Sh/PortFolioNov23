@@ -5,7 +5,7 @@ import { ArrowRightCircle } from "react-bootstrap-icons";
 import "animate.css";
 
 import navIcon1 from "../assets/img/nav-icon1.svg";
-import navIcon2 from "../assets/img/nav-icon2.svg";
+import navIcon2 from "../assets/img/github.webp";
 import navIcon3 from "../assets/img/nav-icon3.svg";
 import TrackVisibility from "react-on-screen";
 
@@ -88,21 +88,27 @@ export const Banner = () => {
                                     </h1>
                                     <p>Slide Down to know more about me...</p>
                                     <div className="social-icon">
-                                        <a href="#">
+                                        <a href="https://www.linkedin.com/in/ankur-sharma-365559214/">
                                             <img src={navIcon1} alt="Icon" />
                                         </a>
-                                        <a href="#">
+                                        <a href="https://github.com/Ankur-Sh">
                                             <img src={navIcon2} alt="Icon" />
                                         </a>
-                                        <a href="#">
+                                        <a href="https://www.instagram.com/ankur_918/">
                                             <img src={navIcon3} alt="Icon" />
                                         </a>
                                     </div>
                                     <button
                                         onClick={() => console.log("connect")}
                                     >
-                                        Let’s Connect{" "}
-                                        <ArrowRightCircle size={25} />
+                                        <a
+                                            className="hidden_link"
+                                            target="_blank"
+                                            href="https://bit.ly/3Z5aH7C"
+                                        >
+                                            Resume
+                                            <ArrowRightCircle size={25} />
+                                        </a>
                                     </button>
                                 </div>
                             )}

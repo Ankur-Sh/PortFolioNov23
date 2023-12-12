@@ -9,4 +9,5 @@
     pointer-events: none;
     user-select: none;
     transition: transform 0.3s ease-in-out, background-color 0.2s ease-in-out;
+    z-index: 10;
 }

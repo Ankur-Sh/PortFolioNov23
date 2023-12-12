@@ -364,7 +364,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     background: #151515;
     border-radius: 64px;
     text-align: center;
-    padding: 60px 50px;
+    padding: 60px 45px;
     margin-top: -60px;
 }
 .skill h2 {
@@ -385,7 +385,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .skill-slider .item img {
     width: 50%;
-    margin: 0 auto 15px auto;
+    margin: 0px auto 15px auto;
+    padding: 0 0.5rem;
 }
 .background-image-left {
     top: 28%;
@@ -621,6 +622,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 @media (max-width: 600px) {
     .newsletter-bx {
         padding: 30px 40px;
+        border-radius: 30px;
     }
     .newsletter-bx h3 {
         font-size: 1.1rem;

@@ -16,31 +16,37 @@ export const Projects = () => {
             title: "Memories Project",
             description: "Web Development",
             imgUrl: projImg4,
+            link: "https://github.com/Ankur-Sh/project_mern_memories",
         },
         {
             title: "Blogging Website",
             description: "Web Development",
             imgUrl: projImg5,
+            link: "https://bloggingwebsite01.netlify.app",
         },
         {
             title: "Quiz App",
             description: "Web Development",
             imgUrl: projImg3,
+            link: "https://github.com/Ankur-Sh/Quizy",
         },
         {
             title: "Shopify",
             description: "Web Development",
             imgUrl: projImg1,
+            link: "https://shopifyts01.netlify.app",
         },
         {
             title: "Crime Locator",
             description: "Web Development",
             imgUrl: projImg2,
+            link: "https://crimelocator.netlify.app",
         },
         {
             title: "Vajra",
             description: "Web Development",
             imgUrl: projImg6,
+            link: "https://github.com/Ankur-Sh/Vajra",
         },
     ];
 
@@ -122,10 +128,32 @@ export const Projects = () => {
                                                 </Row>
                                             </Tab.Pane>
                                             <Tab.Pane eventKey="second">
-                                                <p>More to add Soon...</p>
+                                                <Row>
+                                                    {projects.map(
+                                                        (project, index) => {
+                                                            return (
+                                                                <ProjectCard
+                                                                    key={index}
+                                                                    {...project}
+                                                                />
+                                                            );
+                                                        }
+                                                    )}
+                                                </Row>
                                             </Tab.Pane>
                                             <Tab.Pane eventKey="third">
-                                                <p>More to add Soon...</p>
+                                                <Row>
+                                                    {projects.map(
+                                                        (project, index) => {
+                                                            return (
+                                                                <ProjectCard
+                                                                    key={index}
+                                                                    {...project}
+                                                                />
+                                                            );
+                                                        }
+                                                    )}
+                                                </Row>
                                             </Tab.Pane>
                                         </Tab.Content>
                                     </Tab.Container>
