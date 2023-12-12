@@ -104,7 +104,7 @@ export const Banner = () => {
                                         <a
                                             className="hidden_link"
                                             target="_blank"
-                                            href="https://bit.ly/3Z5aH7C"
+                                            href="https://bit.ly/48fXEn6"
                                         >
                                             Resume
                                             <ArrowRightCircle size={25} />
